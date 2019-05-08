@@ -12,7 +12,6 @@ export default class Contact extends Component {
     this.state = { name: "", email: "", message: "" };
   }
 
-  /* Here’s the juicy bit for posting the form submission */
   handleChange = e => {this.setState({[e.target.name]: e.target.value})};
 
   handleSubmit = e => {
@@ -29,41 +28,14 @@ export default class Contact extends Component {
   render() {
     const { name, email, message } = this.state;
     return (
-      <form onSubmit={this.handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <p>
-        <label>
-          Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-        </label>
-      </p>
-      <p>
-        <label>
-          Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-        </label>
-      </p>
-      <p>
-        <label>
-          Message: <textarea name="message" value={message} onChange={this.handleChange} />
-        </label>
-      </p>
-       <input type="hidden" name="form-name" value="contact" />
-      <p>
+      <form onSubmit={this.handleSubmit} id="contact-form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="text" name="name" value={name} onChange={this.handleChange} placeholder="your name"/>
+          <input type="email" name="email" value={email} onChange={this.handleChange} placeholder="your email"/>
+          <textarea name="message" value={message} onChange={this.handleChange} rows="9" placeholder="write something"/>
+         
+         <input type="hidden" name="form-name" value="contact" />
         <button type="submit">Send</button>
-      </p>
     </form>  
     )
-      // <form onSubmit={this.handleSubmit} id="contact-form" >
-      //   <input type="text" placeholder="name"
-      //     value={this.state.name}
-      //     name="name"
-      //     onChange={this.handleChange}
-      //   />
-      //   <input type="email" placeholder="email"
-      //     value={this.state.email}
-      //     name="email"
-      //     onChange={this.handleChange}
-      //   />
-      //   <textarea name="message" placeholder="write somebody"/>
-      //   <button type="submit">submit</button>
-      // </form>
   }
 }

@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+:root{
+  --main-dark: #181818;
+  --shadow: 0px 2px 5px 1px rgb(34, 34, 34);
+}
 *{
   margin: 0;
   padding: 0;
@@ -16,6 +20,18 @@ p{
 }
 img{
   width: 30rem;
+}
+#section0{
+  background: linear-gradient(to bottom right , rgba(0, 162, 255, 0.89), rgba(59, 84, 223, 0.781));
+}
+#section1{
+  background: linear-gradient(to bottom , rgba(14, 109, 233, 0.911), rgba(20, 46, 192, 0.911));;
+}
+#section2{
+  background: linear-gradient(to bottom left, rgba(19, 50, 107, 0.904), rgba(3, 30, 78, 0.888));
+}
+#section3{
+  background: rgba(5, 38, 100, 0.904);
 }
 
 /* NAVBAR */
@@ -68,7 +84,8 @@ nav li{
   width: 550px;
   height: 550px;
   border-radius: 50%;
-  border: 4px solid #000
+  border: 2px solid rgb(3, 141, 255);
+  box-shadow: var(--shadow);
 }
 #my-name{
   display: flex;
@@ -108,8 +125,9 @@ nav li{
   border-radius: 50%;
   color: #fff;
   text-align: center;
-  background: #000;
-  border: 3px solid gray;
+  background: var(--main-dark);
+  border: 2px solid rgb(3, 141, 255);
+  box-shadow: var(--shadow);
 }
 #about-inner{
 
@@ -135,7 +153,7 @@ nav li{
   margin-bottom: 2rem;
 }
 .lang{
-  opacity: 0.5
+  opacity: 1;
 }
 .lang-1{
   width: 20%;
@@ -243,7 +261,7 @@ nav li{
 #project-h{
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 44%;
   background: #000;
   color: #fff;
   display: flex;
@@ -252,13 +270,22 @@ nav li{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background: var(--main-dark);
+  border: 2px solid rgb(3, 141, 255);
+  box-shadow: var(--shadow);  
 }
 #project1{
   margin-left: 70%;
 }
 @media(max-width: 500px){
+  #project-h{
+    height: 100px;
+    width: 100px;    
+  }
   #project1{
-    margin-left: 0;
+    /* margin-left: 0; */
+    height: 100px;
+    width: 100px;    
   }
 }
 
@@ -276,6 +303,9 @@ nav li{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background: var(--main-dark);
+  border: 2px solid rgb(3, 141, 255);
+  box-shadow: var(--shadow);  
 }
 #contact-form{
   display: flex;
@@ -286,35 +316,45 @@ nav li{
   height: 600px;
   width: 600px;
   border-radius: 50%;
-  background: #000;
+  background: var(--main-dark);
   position: absolute;
   left: 5%;
   top: 10%;
+  border: 3px solid #0096FF;
+  box-shadow: 0px 2px 2px black;
 }
-/* #contact-form input{
+ #contact-form input{
   border: none;
-  background: black;
-  border-bottom: 2px solid white;
-  padding: 4px;
+  background: rgb(14, 14, 14);
   color: white;
+  margin-bottom: 5px;
+  padding: 15px;
+  font-size: 1rem;
+}
+#contact-form input:focus{
+  color: rgb(0, 140, 255);
 }
 #contact-form textarea{
   border: none;
   background: rgb(14, 14, 14);
   color: white;
   resize: none;
-} */
+  font-size: 1rem;
+} 
 #contact-form button{
   border: none;
-  background: blue;
+  background: rgb(0, 102, 255);
   font-size: 1.5rem;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  transition: all 250ms ease;
+}
+#contact-form button:hover{
+  background: rgb(8, 35, 109);
 }
 
 .social{
   position: absolute;
-  background: #000;
   color: #fff;
   display: flex;
   width: 220px;
@@ -323,9 +363,14 @@ nav li{
   align-items: center;
   border-radius: 50%;
   font-size: 4rem;
+  background: var(--main-dark);
+  border: 2px solid rgb(3, 141, 255);
+  box-shadow: var(--shadow);
+  transition: all 250ms ease;
 }
 .social:hover{
   cursor: pointer;
+  color: #0096FF;
 }
 #twitter{
   right: 25%;
@@ -352,7 +397,7 @@ nav li{
     /* bottom: 100px; */
     height: 250px;
     width: 250px;
-    padding: 3rem;
+    padding: 3.3rem;
   }
   .social{
     height: 80px;

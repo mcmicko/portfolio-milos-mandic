@@ -31,10 +31,10 @@ class IndexPage extends Component {
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
          <Parallax ref={ref => (this.parallax = ref)} pages={4}>
-            <ParallaxLayer  offset={0} speed={0} style={{ backgroundColor: 'rgba(0, 21, 255, 0.9)' }}/>
-            <ParallaxLayer  offset={1} speed={0} style={{ backgroundColor: 'rgba(0, 10, 122, 0.9)' }}/>
-            <ParallaxLayer  offset={2} speed={0} style={{ backgroundColor: 'rgba(0, 6, 64, 0.9)' }}/>
-            <ParallaxLayer  offset={3} speed={0} factor={2} style={{ backgroundColor: 'rgba(0, 64, 255, 0.9)' }}/>
+            <ParallaxLayer id="section0" offset={0} speed={0} />
+            <ParallaxLayer id="section1" offset={1} speed={0} />
+            <ParallaxLayer id="section2" offset={2} speed={0} />
+            <ParallaxLayer id="section3" offset={3} speed={0} />
             {/* HEADER */}
             <ParallaxLayer offset={0} speed={1}>
               <Header/>
@@ -85,7 +85,7 @@ class IndexPage extends Component {
               </ParallaxLayer>               
 
           </Parallax> 
-  </Layout>
+      </Layout>
      )
   }
 }
