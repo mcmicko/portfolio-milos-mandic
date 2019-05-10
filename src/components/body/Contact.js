@@ -31,16 +31,19 @@ export default class Contact extends Component {
     const { name, email, message } = this.state;
     return (
         <form 
-        onSubmit={this.handleSubmit} 
-        id="contact-form" name="contact" 
-        method="post" data-netlify="true"
-        action="/page-2/" 
-        data-netlify-honeypot="bot-field"
+          onSubmit={this.handleSubmit} 
+          id="contact-form" name="contact" 
+          method="post" data-netlify="true"
+          action="/page-2/" 
+          data-netlify-honeypot="bot-field"
         >
             <input id="form-input" type="text" name="name" value={name} onChange={this.handleChange} placeholder="your name"/>
             <input id="form-input" type="email" name="email" value={email} onChange={this.handleChange} placeholder="your email"/>
             <textarea name="message" value={message} onChange={this.handleChange} rows="9" placeholder="write something"/>
-          <input type="hidden" name="form-name" value="contact" />
+            
+            <div data-netlify-recaptcha></div>
+         
+            <input type="hidden" name="form-name" value="contact" />
           <button type="submit">Send to Email</button>
         </form>             
     )
