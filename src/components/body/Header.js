@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import image from '../../images/mm.jpg'
+import Image from '../image'
 import {Spring} from 'react-spring/renderprops'
 
 export default class Header extends Component {
@@ -18,7 +18,8 @@ export default class Header extends Component {
                 <h1 id="surname">mandic</h1>          
               </div>
             </div>
-            <img id="my-image" src={image} alt=""/>
+            {/* <img id="my-image" src={image} alt=""/> */}
+            <Image/>
           </div>          
         )
       }}

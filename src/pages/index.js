@@ -28,8 +28,8 @@ class IndexPage extends Component {
   render(){
     return(
       <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-
+        <SEO title="portfolio" keywords={[`gatsby`, `application`, `react`]} />
+         
          <Parallax ref={ref => (this.parallax = ref)} pages={4}>
             <ParallaxLayer id="section0" offset={0} speed={0} />
             <ParallaxLayer id="section1" offset={1} speed={0} />
@@ -69,7 +69,7 @@ class IndexPage extends Component {
               <div id="project1">
                 <div className="info">
                   <p>In this project will build an in depth full stack social network application using Node.js, Express, React, Redux and MongoDB along with ES6+.</p>
-                  <a href="https://quiet-hollows-55212.herokuapp.com/"><TiArrowForwardOutline size="3rem" value={{className:"icon"}}/></a>
+                  <a target="_blank" href="https://quiet-hollows-55212.herokuapp.com/"><TiArrowForwardOutline size="3rem" value={{className:"icon"}}/></a>
                 </div>
               </div>
             </ParallaxLayer>
@@ -82,10 +82,10 @@ class IndexPage extends Component {
               </ParallaxLayer>
               <ParallaxLayer offset={3} speed={1.6}   style={{pointerEvents: 'all'}}>
                 <Contact/>
-                <a id="facebook" className="social" href="www.facebook.com"><FaFacebook /></a>
-                <a id="twitter" className="social" href="#"><FaTwitter/></a>
-                <a id="instagram" className="social" href="#"><FaInstagram/></a> 
-              </ParallaxLayer>               
+                <a id="facebook" className="social" href="https://www.facebook.com/milos.mandic1" target="_blank"><FaFacebook /></a>
+                <a id="twitter" className="social" href="https://twitter.com/mcmickoo" target="_blank"><FaTwitter/></a>
+                <a id="instagram" className="social" href="https://www.instagram.com/mcmickoo/?hl=en" target="_blank"><FaInstagram/></a> 
+              </ParallaxLayer>                
 
           </Parallax> 
       </Layout>

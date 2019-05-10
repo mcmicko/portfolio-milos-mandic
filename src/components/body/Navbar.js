@@ -13,11 +13,11 @@ export default class Navbar extends Component {
           <li><Link className="link-desk" to="projects" spy={true} smooth={true} duration={500}>projects</Link></li>
           <li><Link className="link-desk" to="contact" spy={true} smooth={true} duration={500}>contact</Link></li>	
         </ul>
-        <ul id="nav-mobile">
+        {/* <ul id="nav-mobile">
           <li>About</li>
           <li>Project</li>
           <li>Contact</li>
-        </ul>        
+        </ul>         */}
       </nav>
     )
   }
