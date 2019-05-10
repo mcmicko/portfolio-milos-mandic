@@ -8,7 +8,6 @@ export default class Project extends Component {
         <h1>Project</h1>
       </div>     
       </div>   
-
     )
   }
 }

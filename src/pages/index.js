@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import project1 from "../images/mcmbook.jpg"
+import { TiArrowForwardOutline } from 'react-icons/ti'
 
 import react from "../images/1200px-React-icon.svg.png"
 import csharp from "../images/0_JLPdbimCEnWB8qJL.png"
@@ -62,13 +62,16 @@ class IndexPage extends Component {
             </ParallaxLayer>
 
             {/* PROJECT */}
-            <ParallaxLayer offset={2} speed={1}>
+            <ParallaxLayer offset={2} speed={0.1} style={{ pointerEvents: 'none' }}>
               <Project/>
             </ParallaxLayer>  
-            <ParallaxLayer offset={2} speed={1.3} style={{ pointerEvents: 'none' }}>
-              <a href="#">
-              <img id="project1" src={project1} style={{ width: '450px',height:'400px', borderRadius:'50%' }} />
-              </a>
+            <ParallaxLayer offset={2} speed={1}>
+              <div id="project1">
+                <div className="info">
+                  <p>In this project will build an in depth full stack social network application using Node.js, Express, React, Redux and MongoDB along with ES6+.</p>
+                  <a href="https://quiet-hollows-55212.herokuapp.com/"><TiArrowForwardOutline size="3rem" value={{className:"icon"}}/></a>
+                </div>
+              </div>
             </ParallaxLayer>
 
             {/* CONTACT */}
@@ -77,8 +80,8 @@ class IndexPage extends Component {
                   <h1>Contact</h1>  
                 </div>
               </ParallaxLayer>
-              <ParallaxLayer offset={3} speed={1}   style={{pointerEvents: 'all'}}>
-              <Contact/>
+              <ParallaxLayer offset={3} speed={1.6}   style={{pointerEvents: 'all'}}>
+                <Contact/>
                 <a id="facebook" className="social" href="www.facebook.com"><FaFacebook /></a>
                 <a id="twitter" className="social" href="#"><FaTwitter/></a>
                 <a id="instagram" className="social" href="#"><FaInstagram/></a> 
