@@ -10,9 +10,9 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-import favicon16 from "../images/favicon.ico"
-import favicon32 from "../images/favicon.ico"
-import favicon64 from "../images/favicon.ico"
+import favicon16 from "../images/simbol.png"
+import favicon32 from "../images/simbol.png"
+import favicon64 from "../images/simbol.png"
 
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
