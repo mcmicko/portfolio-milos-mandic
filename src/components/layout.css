@@ -239,7 +239,7 @@ nav li{
     width: 100%;
     left: 0;
     border-radius: 50%;
-    height: 50%;
+    height: 40%;
   }
   #about-content p{
     font-size: 0.8rem;
@@ -342,11 +342,7 @@ nav li{
   border: 2px solid rgb(3, 141, 255);
   box-shadow: var(--shadow);  
 }
-#contact-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+#form-center{
   padding: 2rem;
   height: 600px;
   width: 600px;
@@ -356,28 +352,33 @@ nav li{
   left: 5%;
   top: 10%;
   border: 3px solid #0096FF;
-  box-shadow: 0px 2px 2px black;
+  box-shadow: 0px 2px 2px black; 
+  overflow: hidden; 
 }
- #contact-form input{
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+ #form-input{
   border: none;
+  width: 90%;
   background: rgb(14, 14, 14);
   color: white;
   margin-bottom: 5px;
-  padding: 15px;
   font-size: 1rem;
-}
+  padding: 1rem;
+ }
+
 #contact-form input:focus{
   color: rgb(0, 140, 255);
 }
-#contact-form textarea{
-  border: none;
-  background: rgb(14, 14, 14);
-  color: white;
-  resize: none;
-  font-size: 1rem;
-} 
+
 #contact-form button{
-  border: none;
+  width: 95%;
   background: rgb(0, 102, 255);
   font-size: 1.5rem;
   border-bottom-left-radius: 4px;
@@ -386,8 +387,16 @@ nav li{
 }
 #contact-form button:hover{
   background: rgb(8, 35, 109);
+  cursor: pointer;
 }
-
+.social-group{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
 .social{
   position: absolute;
   color: #fff;
@@ -397,7 +406,7 @@ nav li{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  font-size: 4rem;
+  font-size: 7rem;
   background: var(--main-dark);
   border: 2px solid rgb(3, 141, 255);
   box-shadow: var(--shadow);
@@ -426,17 +435,31 @@ nav li{
     height: 100px;
     width: 100px;
   }
-  #contact-form{
+  #form-center{
     position: absolute;
-    left: -15px;
-    /* bottom: 100px; */
-    height: 250px;
-    width: 250px;
-    padding: 3.3rem;
+    left: -10%;
+    height: 350px;
+    width: 120%;
+    padding: 0rem;    
+  }
+  #contact-form button{
+    width: 50%;
+  }
+
+  #form-input{
+    width: 70%;
+    padding: 0.2rem;
+  }
+  .social-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   .social{
     height: 80px;
     width: 80px;
+    font-size: 4rem;
   }
   #twitter{
     left: 220px;
@@ -451,7 +474,11 @@ nav li{
     top: 420px;
   }
 }
-
+@media(max-width: 321px){
+  #contact-form{
+    left: -15px;
+  }
+}
 
 /* THANKS */
 #thanks{

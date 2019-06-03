@@ -30,6 +30,7 @@ export default class Contact extends Component {
   render() {
     const { name, email, message } = this.state;
     return (
+      <div id="form-center">
         <form 
           onSubmit={this.handleSubmit} 
           id="contact-form" name="contact" 
@@ -39,13 +40,15 @@ export default class Contact extends Component {
         >
             <input id="form-input" type="text" name="name" value={name} onChange={this.handleChange} placeholder="your name"/>
             <input id="form-input" type="email" name="email" value={email} onChange={this.handleChange} placeholder="your email"/>
-            <textarea name="message" value={message} onChange={this.handleChange} rows="9" placeholder="write something"/>
+            <textarea id="form-input" name="message" value={message} onChange={this.handleChange} rows="9" placeholder="write something"/>
             
             <div data-netlify-recaptcha></div>
          
             <input type="hidden" name="form-name" value="contact" />
-          <button type="submit">Send to Email</button>
-        </form>             
+          <button id="form-input" type="submit">Send to Email</button>
+        </form>        
+      </div>
+           
     )
   }
 }

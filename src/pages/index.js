@@ -41,6 +41,11 @@ class IndexPage extends Component {
             </ParallaxLayer>
 
             {/* ABOUT */}
+            <ParallaxLayer offset={1} speed={0.5} style={{ pointerEvents: 'all' }}>
+              <div id="contact-h">
+                <h1>about</h1>  
+              </div>  
+            </ParallaxLayer>               
             <ParallaxLayer offset={1} speed={1}>
               <About/>
             </ParallaxLayer> 
@@ -82,9 +87,11 @@ class IndexPage extends Component {
               </ParallaxLayer>
               <ParallaxLayer offset={3} speed={1.6}   style={{pointerEvents: 'all'}}>
                 <Contact/>
-                <a id="facebook" className="social" href="https://www.facebook.com/milos.mandic1" target="_blank"><FaFacebook /></a>
-                <a id="twitter" className="social" href="https://twitter.com/mcmickoo" target="_blank"><FaTwitter/></a>
-                <a id="instagram" className="social" href="https://www.instagram.com/mcmickoo/?hl=en" target="_blank"><FaInstagram/></a> 
+                <div className="social-group">
+                  <a id="facebook" className="social" href="https://www.facebook.com/milos.mandic1" target="_blank"><FaFacebook /></a>
+                  <a id="twitter" className="social" href="https://twitter.com/mcmickoo" target="_blank"><FaTwitter/></a>
+                  <a id="instagram" className="social" href="https://www.instagram.com/mcmickoo/?hl=en" target="_blank"><FaInstagram/></a> 
+                </div>
               </ParallaxLayer>                
 
           </Parallax> 

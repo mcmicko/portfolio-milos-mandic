@@ -20,7 +20,6 @@ export default class About extends Component {
           <div id="about-inner">
             <div id="about-wrapper">
               <div id="about-content">
-                <h1>about</h1>
                 <p>
                   Hello, my name is Milos, I'm 26 years old and I live in Zrenjanin, Serbia. <br/>
                   I have a degree from the Technical Faculty in Zrenjanin, in the field of Industrial Engineering. <br/>
