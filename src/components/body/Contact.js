@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { navigateTo } from "gatsby-link"
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -30,6 +31,7 @@ export default class Contact extends Component {
   render() {
     const { name, email, message } = this.state;
     return (
+      <>
       <div id="form-center">
         <form 
           onSubmit={this.handleSubmit} 
@@ -45,9 +47,15 @@ export default class Contact extends Component {
             
             <input type="hidden" name="form-name" value="contact" />
           <button id="form-input" type="submit">Send to Email</button>
-        </form>        
+        </form>  
       </div>
-           
+      
+      <div className="social-group">
+        <a id="facebook" className="social" href="https://www.facebook.com/milos.mandic1" target="_blank"><FaFacebook /></a>
+        <a id="twitter" className="social" href="https://twitter.com/mcmickoo" target="_blank"><FaTwitter/></a>
+        <a id="instagram" className="social" href="https://www.instagram.com/mcmickoo/?hl=en" target="_blank"><FaInstagram/></a>         
+      </div>
+      </>     
     )
   }
 }

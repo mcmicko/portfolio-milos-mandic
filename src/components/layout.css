@@ -116,7 +116,7 @@ nav li{
 /* ABOUT */
 #about{
   position: absolute;
-  top: 0;
+  top: 6rem;
   left: 5%;
   align-items: center;
   width: 800px;
@@ -236,10 +236,11 @@ nav li{
   #about{
     position: static;
     margin: 0;
-    width: 100%;
+    width: calc(100% - 25px);
     left: 0;
     border-radius: 50%;
-    height: 40%;
+    height: calc(40% + 40px);
+    margin: 0 10px;
   }
   #about-content p{
     font-size: 0.8rem;
@@ -272,6 +273,43 @@ nav li{
   background: var(--main-dark);
   border: 2px solid rgb(3, 141, 255);
   box-shadow: var(--shadow);  
+}
+#warning{
+  position: fixed;
+  display: flex;
+  top: 15rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.644);
+  color: #fff;
+  padding: 4rem;
+}
+#warning-icon{
+  color: rgb(3, 141, 255);
+  font-size: 5rem;
+}
+#warning p{
+  font-size: 2rem
+}
+#war-button{
+  text-decoration: none;
+  color: #0096FF;
+  font-size: 2rem;
+  margin-top: 1rem;
+  border: 2px solid #0096FF;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+#war-button:hover{
+  background: #0096FF;
+  color: black; 
 }
 #project1{
   position: relative;
@@ -313,6 +351,15 @@ nav li{
   #project-h{
     height: 100px;
     width: 100px; 
+  }
+  #warning{
+    padding: 0rem;
+  }
+  #warning p{
+    font-size: 1rem;
+  }
+  #war-button{
+    font-size: 1rem;
   }
   #project1{
     left: 0;
@@ -442,12 +489,13 @@ nav li{
     width: 70%;
     padding: 0.2rem;
   }
-  .social-group{
+  /* .social-group{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-  }
+    z-index: 111;
+  } */
   .social{
     height: 80px;
     width: 80px;
