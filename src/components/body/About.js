@@ -23,7 +23,9 @@ export default class About extends Component {
                 <p>
                   Hello, my name is Milos, I'm 26 years old and I live in Zrenjanin, Serbia. <br/>
                   I have a degree from the Technical Faculty in Zrenjanin, in the field of Industrial Engineering. <br/>
-                  My passion is to programing. My hobby grew into love. I like to create something new and funcional in a blank page, and that other people benefit from it. <br/>
+                  {/* My passion is to programing. My hobby grew into love.  <br/> */}
+                  I am passionate about technology and how it impacts human lives. Whether we're becoming more distant with technological advancements, and generally how tech impacts our everyday lives, are types of questions I like to read on and try to find an answer somehow.
+                  I like to create something new and funcional in a blank page, and that other people benefit from it.
                 </p>
               </div>      
             </div>      

@@ -41,9 +41,9 @@ export default class Contact extends Component {
           data-netlify-honeypot="bot-field"
           data-netlify-recaptcha="false"
         >
-            <input id="form-input" type="text" name="name" value={name} onChange={this.handleChange} placeholder="your name"/>
-            <input id="form-input" type="email" name="email" value={email} onChange={this.handleChange} placeholder="your email"/>
-            <textarea id="form-input" name="message" value={message} onChange={this.handleChange} rows="9" placeholder="write something"/>
+            <input id="form-input" type="text" name="name" value={name} onChange={this.handleChange} required placeholder="your name"/>
+            <input id="form-input" type="email" name="email" value={email} onChange={this.handleChange} required placeholder="your email"/>
+            <textarea id="form-input" name="message" value={message} onChange={this.handleChange} rows="9" required placeholder="write something"/>
             
             <input type="hidden" name="form-name" value="contact" />
           <button id="form-input" type="submit">Send to Email</button>

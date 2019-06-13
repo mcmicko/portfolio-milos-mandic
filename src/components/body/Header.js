@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Image from '../image'
 import {Spring} from 'react-spring/renderprops'
+import image from '../../images/mm.jpg'
 
 export default class Header extends Component {
   render() {
@@ -8,6 +9,7 @@ export default class Header extends Component {
       <Spring
         from={{opacity:0}}
         to={{opacity:1}}
+        config={{duration: 1000}}
       >
       {props => {
         return(
@@ -18,8 +20,7 @@ export default class Header extends Component {
                 <h1 id="surname">mandic</h1>          
               </div>
             </div>
-            {/* <img id="my-image" src={image} alt=""/> */}
-            <Image/>
+            <img id="my-image" src={image} alt=""/>
           </div>          
         )
       }}

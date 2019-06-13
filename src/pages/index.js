@@ -42,6 +42,9 @@ class IndexPage extends Component {
             <ParallaxLayer offset={0} speed={1}>
               <Header/>
             </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={-1} scrolling={true}>
+              <div id="arrow-down"></div>
+            </ParallaxLayer>
 
             {/* ABOUT */}
             <ParallaxLayer offset={1} speed={0.5} style={{ pointerEvents: 'all' }}>
