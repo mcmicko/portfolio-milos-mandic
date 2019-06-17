@@ -20,7 +20,10 @@ export default class Header extends Component {
                 <h1 id="surname">mandic</h1>          
               </div>
             </div>
-            <img id="my-image" src={image} alt=""/>
+            <div id="my-image">
+             <Image/>
+            </div>
+            {/* <img id="my-image" src={image} alt=""/> */}
           </div>          
         )
       }}

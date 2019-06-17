@@ -80,6 +80,10 @@ nav li{
   height: 100vh;
 }
 #my-image{
+  /* display: flex;*/
+  /*align-items: center;
+  justify-content: center; */
+  overflow: hidden;
   width: 550px;
   height: 550px;
   border-radius: 50%;
@@ -233,8 +237,8 @@ nav li{
 }
 #csharp{
   position: absolute;
-  right: 5%;
-  top: 53%;
+  right: 14%;
+  top: 54%;
 }
 #htmll{
   position: absolute;
@@ -258,8 +262,8 @@ nav li{
 }
 #aspnett{
   position: absolute;
-  right: 30%;
-  top: 64%;
+  right: 8%;
+  top: 62%;
 }
 #sasss{
   position: absolute;
@@ -269,7 +273,7 @@ nav li{
 #nodejs{
   position: absolute;
   top: 44%;
-  right: 15%;
+  right: 19%;
 }
 #express{
   position: absolute;
@@ -279,7 +283,7 @@ nav li{
 #mongoo{
   position: absolute;
   top: 78%;
-  right: 24%;
+  right: 28%;
 }
 #gatsbyy{
   position: absolute;
@@ -377,8 +381,11 @@ nav li{
   background: #0096FF;
   color: black; 
 }
+#project{
+  width: 100%;
+}
 #project1{
-  position: relative;
+  position: fixed;
   top: 15%;
   left: 15%;
   width: 500px;
@@ -388,6 +395,21 @@ nav li{
   background-position: center;
   background-size: cover;
   border-radius: 50%;
+  border: 2px solid rgb(3, 141, 255);
+  box-shadow: var(--shadow);  
+}
+#project2{
+  position: fixed;
+  top: 45%;
+  right: 25%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  background: url(../images/port2.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  z-index: -1;
   border: 2px solid rgb(3, 141, 255);
   box-shadow: var(--shadow);  
 }
@@ -427,10 +449,20 @@ nav li{
   #war-button{
     font-size: 1rem;
   }
+  #project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #project1{
-    left: 0;
+    position: static;
     height: 300px;
-    width: 100%;    
+    width: 300px;    
+  }
+  #project2{
+    position: static;
+    height: 300px;
+    width: 300px;    
   }
   .info{
     opacity: 1;
