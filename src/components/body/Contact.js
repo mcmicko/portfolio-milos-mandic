@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { navigateTo } from "gatsby-link"
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaGithub } from 'react-icons/fa';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -53,7 +53,7 @@ export default class Contact extends Component {
       <div className="social-group">
         <a id="facebook" className="social" href="https://www.facebook.com/milos.mandic1" target="_blank"><FaFacebook /></a>
         <a id="twitter" className="social" href="https://twitter.com/mcmickoo" target="_blank"><FaTwitter/></a>
-        <a id="instagram" className="social" href="https://www.instagram.com/mcmickoo/?hl=en" target="_blank"><FaInstagram/></a>         
+        <a id="instagram" className="social" href="https://github.com/mcmicko" target="_blank"><FaGithub/></a>         
       </div>
       </>     
     )

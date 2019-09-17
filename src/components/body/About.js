@@ -11,6 +11,7 @@ import mongoo from "../../images/mongodb.png"
 import nodejs from "../../images/nodejs.png"
 import express from "../../images/express.png"
 import gastbyy from "../../images/gatsby-icon.png"
+import angularr from "../../images/angular-14a0f6532f.png"
 
 export default class About extends Component {
   render() {
@@ -45,6 +46,7 @@ export default class About extends Component {
           <img className="icon-mobile" src={sasss} alt=""/>
           <img className="icon-mobile" src={express} alt=""/>     
           <img className="icon-mobile" src={gastbyy} alt=""/>     
+          <img className="icon-mobile" src={angularr} alt=""/>     
         </div>
       </React.Fragment>
 

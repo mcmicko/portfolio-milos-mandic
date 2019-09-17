@@ -16,6 +16,7 @@ import mongoo from "../images/mongodb.png"
 import nodejs from "../images/nodejs.png"
 import express from "../images/express.png"
 import gatsbyy from "../images/gatsby-icon.png"
+import angularr from "../images/angular-14a0f6532f.png"
 
 import Header from '../components/body/Header';
 import About from "../components/body/About";
@@ -58,6 +59,7 @@ class IndexPage extends Component {
               <img id="mongoo" className="lang lang-2" src={mongoo} alt=""/>
               <img id="gatsbyy" className="lang lang-2" src={gatsbyy} alt=""/>
               <img id="htmll" className="lang lang-2" src={html} alt=""/>
+              <img id="angular" className="lang lang-2" src={angularr} alt=""/>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1.2} style={{ pointerEvents: 'none' }}>
               <img id="csss" className="lang lang-2" src={csss} alt=""/>
