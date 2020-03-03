@@ -525,12 +525,14 @@ nav li{
     margin-top: 5px;
     height: 300px;
     width: 300px;    
+    z-index: 100;
   }
   #project2{
     position: static;
     margin-top: 5px;
     height: 300px;
-    width: 300px;    
+    width: 300px;   
+    z-index: 100; 
   }
   .info{
     opacity: 1;
